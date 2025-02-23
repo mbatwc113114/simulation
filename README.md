@@ -27,7 +27,7 @@ sudo apt update && sudo apt install -y ros-foxy-desktop python3-opencv
 ### Clone the Repository
 
 ```sh
-git clone https://github.com/your-username/simulation-repo.git
+git https://github.com/mbatwc113114/simulation.git
 cd simulation-repo
 ```
 
