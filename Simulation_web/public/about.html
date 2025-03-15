@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Simulation Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #6366f1, #8b5cf6);
+            --bg-color: #121212;
+            --text-color: #ffffff;
+            --text-color-secondary: rgba(255, 255, 255, 0.7);
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://img.freepik.com/free-photo/film-maker-editing-movie-montage-with-virtual-reality-glasses-using-multimedia-production-software-create-footage-edit-video-with-color-grading-visual-effects-working-with-vr-goggles_482257-50388.jpg?t=st=1742061417~exp=1742065017~hmac=0cc93d406512565b8d95daa993db5964b8f89492063be86f275cb7ce5349cf39&w=996') center/cover;
+            color: white;
+            text-align: center;
+            padding: 200px 20px;
+        }
+
+        .card-custom {
+            background-color: #24292e;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card-custom:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #24292e;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        footer a {
+            color: white;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #3c3942;
+        }
+
+        .card-custom {
+    background: linear-gradient(135deg, #24292e, #2d2d2d);
+    border: 2px solid #323244; /* Add a border */
+    border-radius: 12px; /* Slightly increased border radius */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Increased shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+    padding: 20px; /* Added padding for content */
+}
+
+.card-custom:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+
+.card-custom h2 {
+    font-size: 1.5em; /* Increase heading size */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.card-custom p {
+    font-size: 1em; /* Standard paragraph size */
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg box_nav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Simulation Project</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#vision">Vision</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team">Admin Team</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="hero">
+        <h1>Our Vision</h1>
+        <p>Building a collaborative open-source platform for advanced simulations.</p>
+    </header>
+    
+    <section id="vision" class="container my-5">
+        <h2 class="text-center">Our Vision</h2>
+        <p class="text-center">The Simulation Project aims to create an open-source platform for developing and sharing interactive simulations. We strive to make technology more accessible, helping students, researchers, and enthusiasts build and experiment with real-world models.</p>
+    </section>
+
+    <section class="container my-5">
+        <h2 class="text-center">Get Started</h2>
+        <div class="row text-center">
+            <div class="col-md-6">
+                <div class="card join-card p-4">
+                    <div class="code-block">
+                                            <h5>Clone the Repository:</h5>
+                    <pre>git clone https://github.com/mbatwc113114/simulation.git</pre>
+                    <p>cd simulation</p>
+                </div>
+
+                </div>
+            </div>
+            <div class="col-md-6 ">
+                <div class="card join-card p-4">
+                    <div class="code-block">
+                    <h5>Install Dependencies:</h5>
+                    <pre>pip install -r requirements.txt</pre>
+                </div>
+                <br>
+                <div class="code-block">
+                    <h5>Run the Application:</h5>
+                    <pre>python main.py</pre>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="team" class="container my-5">
+        <h2 class="text-center">Meet the Admin Team</h2>
+        <div class="row text-center">
+            <div class="col-md-4 card-custom">
+                <img src="resources/admin.png" class="rounded-circle" width="150" height="150" alt="Admin 1">
+                <h5>Aman Choudhary</h5>
+                <p>Lead Developer</p>
+            </div>
+            <div class="col-md-4 card-custom">
+                <img src="assets/admin2.jpg" class="rounded-circle" width="150" height="150" alt="Admin 2">
+                <h5>Admin Name 2</h5>
+                <p>Project Manager</p>
+            </div>
+            <div class="col-md-4 card-custom">
+                <img src="assets/admin3.jpg" class="rounded-circle" width="150" height="150" alt="Admin 3">
+                <h5>Admin Name 3</h5>
+                <p>Community Coordinator</p>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2025 Simulation Project. Built with passion by the community.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html" class="text-white">Home</a></li>
+                <li class="list-inline-item"><a href="#vision" class="text-white">Vision</a></li>
+                <li class="list-inline-item"><a href="#team" class="text-white">Admin Team</a></li>
+                <li class="list-inline-item"><a href="https://github.com/mbatwc113114/simulation.git" class="text-white" target="_blank">GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

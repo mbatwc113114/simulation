@@ -1,14 +1,167 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulation</title>
+    <title>Simulation Project - Open Source</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="shared-background">
+        <nav class="navbar navbar-expand-lg box_nav">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <i class="fas fa-atom me-2"></i>
+                    Simulation Project
+                </a>
+                <div class="d-flex align-items-center">
+                    <button id="themeToggle" class="theme-toggle me-3">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#steps">Get Started</a></li>   
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#join">Join Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    h1>Simulation</h1>
-    <p>Simulation website under devlopment </p>
+        <header class="hero">
+            <div class="container">
+                <h1 class="display-4 fw-bold mb-4">Open-Source Simulation Project</h1>
+                <p class="lead mb-5">Join us in building the future of simulations and technology with Python and Tkinter.</p>
+                <a href="https://github.com/mbatwc113114/simulation.git" class="btn btn-github btn-lg">
+                    <i class="fab fa-github me-2"></i>
+                    Contribute on GitHub
+                </a>
+            </div>
+        </header>
+    </div>
     
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">About the Project</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <div class="card join-card">
+                        <div class="card-body p-4">
+                            <p class="lead text-center">Welcome to the <strong>Simulation</strong> repository! This project is dedicated to developing various simulations using <strong>Tkinter in Python</strong>. Our goal is to create interactive and visually appealing simulations that can be used for educational and experimental purposes.</p>
+                            <div class="text-center mt-4">
+                                <a href="#steps" class="btn btn-primary">
+                                    Get Started
+                                    <i class="fas fa-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="steps" class="py-5 bg-color-secondary">
+        <div class="container">
+            <h2 class="text-center mb-5">Get Started</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card join-card h-100">
+                        <div class="card-body p-4">
+                            <h5 class="mb-3"><i class="fas fa-code-branch me-2"></i><strong>Clone the Repository:</strong></h5>
+                            <pre class="code-block"><code>git clone https://github.com/mbatwc113114/simulation.git
+cd simulation</code></pre>
+                            <h5 class="mb-3"><i class="fas fa-cogs me-2"></i><strong>Install Dependencies:</strong></h5>
+                            <pre class="code-block"><code>pip install -r requirements.txt</code></pre>
+                            <h5 class="mb-3"><i class="fas fa-play-circle me-2"></i><strong>Run the Application:</strong></h5>
+                            <pre class="code-block"><code>python main.py</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card join-card h-100">
+                        <div class="card-body p-4">
+                            <h5 class="mb-3"><i class="fas fa-info-circle me-2"></i><strong>Learn More:</strong></h5>
+                            <p class="lead">For more information on how to use the application, check the documentation in the repository.</p>
+                            <div class="text-center mt-4">
+                                <a href="#join" class="btn btn-primary">
+                                    Join Us
+                                    <i class="fas fa-arrow-right ms-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Gallery</h2>
+            <div class="image-row">
+                <img src="resources/main.png" alt="Sample Image 1">
+                <img src="resources/simulation.png" alt="Sample Image 2">
+                <img src="resources/graph.png" alt="Sample Image 3">
+                <img src="resources/graph2.png" alt="Sample Image 4">
+            </div>
+        </div>
+    </section>
+
+    <section id="join" class="join-section">
+        <div class="container">
+            <h2 class="text-center mb-5">Join Us</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="card join-card">
+                        <div class="join-image-container">
+                            <!-- <img src="https://i.pinimg.com/736x/9e/82/4c/9e824c16b335b342fb9567470a14b534.jpg" alt="Join Us" class="join-image"> -->
+                            <img src="https://i.pinimg.com/736x/66/20/87/662087df1986b1e97b3bd46c57a89a2f.jpg" alt="Join Us" class="join-image">
+                        </div>
+                        <div class="join-form-container">
+                            <h2>Sign Up</h2>
+                            <form class="join-form">
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                    <label for="name">Your Name</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                    <label for="email">Your Email</label>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-join">Join Now</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <h5>Stay Connected</h5>
+            <p>Follow us on our social media channels for updates and news.</p>
+            <a href="https://github.com/mbatwc113114/simulation.git" class="btn btn-github">
+                <i class="fab fa-github me-2"></i>
+                GitHub Repository
+            </a>
+        </div>
+        <div class="text-center mt-4">
+            <p>&copy; 2025 Simulation Project. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
