@@ -65,7 +65,7 @@ def open_window(parent_window):
             
             # Labels and legend
             ax.set_xlabel("Radius")
-            ax.set_ylabel("Q")
+            ax.set_ylabel("(Q) heat transfer rate")
             ax.set_title("Heat Transfer Rate vs Radius",pad=20)
             ax.legend()
             ax.grid()
@@ -98,15 +98,15 @@ def open_window(parent_window):
 
     # Input fields with labels
     fields = [
-        ("x_fact", x_fact_var),
-        ("ri (Inner Radius)", ri_var),
-        ("k (Thermal Conductivity)", k_var),
-        ("l (Length)", l_var),
-        ("h (Heat Transfer Coeff.)", h_var),
-        ("ti (Initial Temp)", ti_var),
-        ("to (Surrounding Temp)", to_var),
-        ("n (Iterations)", n_var),
-    ]
+    ("x_fact (Scaling Factor)", x_fact_var),
+    ("ri (Inner Radius) m", ri_var, ),
+    ("k (Thermal Conductivity) W/mK", k_var),
+    ("l (Length) m", l_var),
+    ("h (Heat Transfer Coeff.) W/m²K", h_var),
+    ("ti (Initial Temp) °C", ti_var),
+    ("to (Surrounding Temp) °C", to_var),
+    ("n (Iterations)", n_var),
+]
     
     for i, (label_text, var) in enumerate(fields):
         frame = ctk.CTkFrame(input_frame, fg_color="transparent")
