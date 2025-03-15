@@ -1,86 +1,88 @@
 # Simulation Repository
 
-![Project Banner](https://via.placeholder.com/1000x300.png?text=Simulation+Project) <!-- Replace with an actual banner image if available -->
+Welcome to the **Simulation** repository! This repository is dedicated to developing various simulations using **Tkinter in Python**. Our goal is to create interactive and visually appealing simulations that can be used for educational and experimental purposes.
 
-## 🚀 Overview
+## Purpose
 
-This repository contains a **simulation project** designed for [specific purpose, e.g., robotics, mechanical systems, AI, etc.]. The simulation is built using [mention technologies/frameworks, e.g., ROS 2, OpenCV, Gazebo, Python, etc.] and provides an interactive environment for testing and analysis.
+This repository serves as a collaborative space for developing **Tkinter-based simulations**. Each simulation is created in an organized manner to ensure reusability and modularity. We encourage contributors to create new branches for different simulations and follow the repository structure.
 
-## 📌 Features
+## Get Started
 
-- 🔹 [Feature 1: e.g., Real-time visualization]
-- 🔹 [Feature 2: e.g., Multi-agent simulation]
-- 🔹 [Feature 3: e.g., Customizable parameters]
-- 🔹 [Feature 4: e.g., Integration with hardware]
+To get started with this repository, follow the steps below:
 
-## 🛠 Installation
-
-### Prerequisites
-
-Ensure you have the following dependencies installed:
+### 1. Clone the Repository
 
 ```sh
-# Example dependencies
-sudo apt update && sudo apt install -y ros-foxy-desktop python3-opencv
+git clone https://github.com/mbatwc113114/simulation.git
+cd simulation
 ```
 
-### Clone the Repository
+### 2. Install Python
+
+Ensure you have **Python 3.8+** installed. You can download it from [Python's official website](https://www.python.org/downloads/).
+
+### 3. Create a Virtual Environment
+
+It is recommended to use a virtual environment to manage dependencies:
 
 ```sh
-git https://github.com/mbatwc113114/simulation.git
-cd simulation-repo
+python3 -m venv venv
+source venv/bin/activate  # On macOS/Linux
+venv\Scripts\activate     # On Windows
 ```
 
-### Install Required Packages
+### 4. Install Dependencies
 
 ```sh
 pip install -r requirements.txt
 ```
 
-## 🚀 Usage
+## Testing
 
-To launch the simulation, run:
-
-```sh
-python main.py  # Replace with actual command
-```
-
-Or for ROS-based simulations:
+To run the simulation GUI, execute:
 
 ```sh
-ros2 launch simulation_package simulation.launch.py
+python3 main.py
 ```
 
-## 📂 Project Structure
+<!-- ![Description](assets/image_name.png) -->
 
+## Contributing
+
+To create a new simulation, follow these steps:
+
+### 1. Create a New Branch
+
+Create a new branch and edit there:
+
+```sh
+git checkout -b feature/simulation_name
 ```
-📦 simulation-repo
-├── 📂 src          # Source code
-├── 📂 config       # Configuration files
-├── 📂 docs         # Documentation
-├── 📂 assets       # Images, models, etc.
-├── requirements.txt # Dependencies
-└── README.md       # Project documentation
+
+### 2. Use `child_.py` as a Template
+
+All simulations should follow a structured format. Use `child/child_.py` as the base template to ensure consistency.
+
+### 3. Implement Your Simulation
+
+Develop your simulation using **Tkinter** and any additional required libraries. Ensure that the code is well-structured and documented.
+
+### 4. Push Changes and Create a Pull Request
+
+```sh
+git add .
+git commit -m "Added new simulation: simulation_name"
+git push origin feature/simulation_name
 ```
 
-## 📜 License
+Then, create a **Pull Request (PR)** for review and merging.
 
-This project is licensed under the [MIT License](LICENSE).
+## License
 
-## 🤝 Contributing
+This project is open-source and available under the **MIT License**. A `LICENSE` file is included in the repository with details.
 
-Contributions are welcome! Please follow these steps:
+## Contact & Support
 
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature-branch`)
-3. Commit your changes (`git commit -m 'Add new feature'`)
-4. Push to your branch (`git push origin feature-branch`)
-5. Open a Pull Request
+For any issues or discussions, open an **Issue** on GitHub or contact the repository maintainers.
 
-## 📬 Contact
-
-For questions, reach out to **[Your Name]** at [your.email@example.com] or create an issue in this repository.
-
----
-
-_⭐ If you find this project useful, please star the repository!_
+Happy Coding! 🚀
