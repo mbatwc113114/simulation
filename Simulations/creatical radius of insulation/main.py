@@ -9,7 +9,7 @@ from tkinter import filedialog
 def open_window(parent_window):
     # Create child window
     child = ctk.CTkToplevel()
-    child.title("Heat Transfer Simulation")
+    child.title("Heat Transfer Simulation ( critical radius of insulation )")
     child.geometry("1000x600")
     
     # Function to go back to parent
