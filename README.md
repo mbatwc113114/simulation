@@ -45,7 +45,9 @@ To run the simulation GUI, execute:
 python3 main.py
 ```
 
-<!-- ![Description](assets/image_name.png) -->
+![the snapshot of main window](assets/main.png)
+
+![the snapshot of simulation window](assets/simulation.png)
 
 ## Contributing
 

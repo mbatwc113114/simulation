@@ -9,7 +9,7 @@ root.geometry("800x500")
 root.configure(bg="black")
 
 # Excluded folders
-excluded_folders = {".git", "venv", "child_"}
+excluded_folders = {".git", "venv", "child_","Simulation_web" }
 
 # Get the list of folders dynamically
 current_path = os.getcwd()
