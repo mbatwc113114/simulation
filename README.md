@@ -63,15 +63,22 @@ Create a new branch and edit there:
 git checkout -b feature/simulation_name
 ```
 
-### 2. Use `child_.py` as a Template
+### 2. Add your simulation folder
+
+```sh
+cd Simulations
+mkdir <Your-simulation-name>
+```
+
+### 3. Use `child_.py` as a Template
 
 All simulations should follow a structured format. Use `child/child_.py` as the base template to ensure consistency.
 
-### 3. Implement Your Simulation
+### 4. Implement Your Simulation
 
 Develop your simulation using **Tkinter** and any additional required libraries. Ensure that the code is well-structured and documented.
 
-### 4. Push Changes and Create a Pull Request
+### 5. Push Changes and Create a Pull Request
 
 ```sh
 git add .
